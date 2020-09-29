@@ -12,14 +12,14 @@ class ShippingFee:
 		return cost * (100-discount) / 100
 
 	def get_fee(self):
-		cost = self.parcel.get_cost()
+		original_price = self.parcel.get_cost()
 		discount = self.voucher.get_discount()
 
-		if cost == "N/A":
-			return cost
+		if original_price == "N/A":
+			return original_price, original_price, original_price
 		if discount == 0:
-			return cost
+			return original_price, "0%", original_price
 
-		discounted_price = str(self._get_discounted_price(float(cost), discount))
-		return discounted_price
+		discounted_price = self._get_discounted_price(float(original_price), discount)
+		return str(discounted_price), str(discount)+"%", original_price
 
