@@ -6,7 +6,7 @@ services:
     networks:
       - mydockernet
     ports:
-      - "8001:8001"
+      - "8000:8000"
     environment:
       - CONFIG_USE_DEBUG_MODE
   nginx:
