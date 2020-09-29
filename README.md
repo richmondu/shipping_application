@@ -39,4 +39,7 @@ Python was used in this exercise instead of Java
 
 1. Refer to shipping_application/_curltest for sample batch scripts
 
-
+	- test_curl_live.bat
+	- test_curl_live_MYNT.bat
+	- test_curl_live_GFI.bat
+	- test_curl_live_skdlks
