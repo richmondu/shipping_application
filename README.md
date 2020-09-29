@@ -8,9 +8,9 @@ Python was used in this exercise instead of Java
 
 1. Run unittest.bat. This will run 
 
-   unittest_parcel.py - test Parcel module
-   unittest_voucher.py - test Voucher module
-   unittest_shipping_fee.py - test Shipping Fee module (uses Parcel and Voucher modules)
+	- unittest_parcel.py - test Parcel module
+	- unittest_voucher.py - test Voucher module
+	- unittest_shipping_fee.py - test Shipping Fee module (uses Parcel and Voucher modules)
 
 
 # System testing
@@ -26,13 +26,13 @@ Python was used in this exercise instead of Java
 
 4. Choose Server
 
-   a. local testing - http://127.0.0.1:8000
-   b. live testing - https://richmondu.com
+	- local testing - http://127.0.0.1:8000
+	- live testing - https://richmondu.com
 
 5. Test the API
 
-   a. Input weight, height, width and length
-   b. Choose code (voucher code for discount)
+	- Input weight, height, width and length
+	- Choose code (voucher code for discount)
 
 
 ### How to test using Curl:
