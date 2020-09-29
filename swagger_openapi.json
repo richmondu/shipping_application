@@ -1,0 +1,84 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Shipping Fee Application",
+    "description": "Simple application demonstrating computation of shipping fee of parcel based on its weight and volume",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://richmondu.com/api/v1",
+      "description": "For live testing"
+    },
+    {
+      "url": "http://127.0.0.1:8000/api/v1",
+      "description": "For local development testing"
+    }
+  ],
+  "paths": {
+    "/shipping/fee": {
+      "get": {
+        "summary": "Computes shipping fee based on parcel's weight and volume",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "weight",
+            "schema": {
+              "type": "number"
+            },
+            "required": true,
+            "description": "weight of parcel in kg"
+          },
+          {
+            "in": "query",
+            "name": "height",
+            "schema": {
+              "type": "number"
+            },
+            "required": true,
+            "description": "height of parcel in cm"
+          },
+          {
+            "in": "query",
+            "name": "width",
+            "schema": {
+              "type": "number"
+            },
+            "required": true,
+            "description": "width of parcel in cm"
+          },
+          {
+            "in": "query",
+            "name": "length",
+            "schema": {
+              "type": "number"
+            },
+            "required": true,
+            "description": "length of parcel in cm"
+          },
+          {
+            "in": "query",
+            "name": "code",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "MYNT",
+                "GFI",
+                "skdlks"
+              ]
+            },
+            "description": "voucher code for discount"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    }
+  }
+}
