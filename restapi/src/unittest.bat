@@ -1,0 +1,4 @@
+python unittest_parcel.py
+python unittest_voucher.py
+python unittest_shipping_fee.py
+pause
