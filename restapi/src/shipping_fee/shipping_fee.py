@@ -20,5 +20,6 @@ class ShippingFee:
 		if discount == 0:
 			return cost
 
-		return str(self._get_discounted_price(float(cost), discount))
+		discounted_price = str(self._get_discounted_price(float(cost), discount))
+		return discounted_price
 
