@@ -7,6 +7,7 @@ Python was used in this exercise instead of Java
 # Unit testing
 
 1. Run unittest.bat. This will run 
+
    unittest_parcel.py - test Parcel module
    unittest_voucher.py - test Voucher module
    unittest_shipping_fee.py - test Shipping Fee module (uses Parcel and Voucher modules)
@@ -24,10 +25,12 @@ Python was used in this exercise instead of Java
 3. Click Explore button.
 
 4. Choose Server
+
    a. local testing - http://127.0.0.1:8000
    b. live testing - https://richmondu.com
 
 5. Test the API
+
    a. Input weight, height, width and length
    b. Choose code (voucher code for discount)
 
