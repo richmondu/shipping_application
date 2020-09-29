@@ -33,7 +33,7 @@ class ApiLogger:
 					pass
 
 				val = func(*args, **kwargs)
-				print("<<< {} {:.2f}\n".format(func.__name__, time.time()-starttime))
+				print("<<< {} {:.2f} secs\n".format(func.__name__, time.time()-starttime))
 				return val
 
 			else:
