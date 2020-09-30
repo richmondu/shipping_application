@@ -1,7 +1,8 @@
 from flask import Blueprint, jsonify, abort, request
 from shipping_fee.util.api_logger import ApiLogger
 from shipping_fee.util.api_exception import ApiException
-from shipping_fee.shipping_fee import ShippingFee
+from shipping_fee.shipping.shipping_fee import ShippingFee
+from shipping_fee.shipping.response import ShippingFeeResponse
 
 
 blueprint_shippingfee = Blueprint('blueprint_shippingfee', __name__)
@@ -19,12 +20,4 @@ def compute_shipping_fee():
 	code = request.args.get('code')
 
 	shipping = ShippingFee(code, weight, height, width, length)
-	discounted_price, percent_discount, original_price = shipping.get_fee()
-	if discounted_price == "N/A":
-		return jsonify(price=discounted_price)
-	if code is None:
-		return jsonify(price=discounted_price, currency="PHP")
-	return jsonify(price=discounted_price, discount=percent_discount, original_price=original_price, currency="PHP")
-
-
-
+	return ShippingFeeResponse(shipping.get_fee()).get()

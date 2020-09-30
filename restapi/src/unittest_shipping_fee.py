@@ -1,5 +1,5 @@
 import unittest
-from shipping_fee.shipping_fee import ShippingFee
+from shipping_fee.shipping.shipping_fee import ShippingFee
 
 
 class ShippingFeeUnitTest(unittest.TestCase):
