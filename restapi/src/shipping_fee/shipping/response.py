@@ -1,16 +1,16 @@
 from flask import jsonify
+from shipping_fee.shipping.shipping_fee import ShippingFee
 
 
 class ShippingFeeResponse:
 
-	def __init__(self, discounted_price: str, percent_discount: str, original_price: str):
-		self.discounted_price = discounted_price
-		self.percent_discount = percent_discount
-		self.original_price = original_price
+	def __init__(self, shipping: ShippingFee):
+		self.shipping = shipping
 
 	def get(self):
-		if self.discounted_price == "N/A":
-			return jsonify(price=self.discounted_price)
-		if code is None:
-			return jsonify(price=self.discounted_price, currency="PHP")
-		return jsonify(price=self.discounted_price, discount=self.percent_discount, original_price=self.original_price, currency="PHP")
+		discounted_price, percent_discount, original_price = self.shipping.get_fee()
+		if discounted_price == "N/A":
+			return jsonify(price=discounted_price)
+		if self.shipping.get_code() is None:
+			return jsonify(price=discounted_price, currency="PHP")
+		return jsonify(price=discounted_price, discount=percent_discount, original_price=original_price, currency="PHP")

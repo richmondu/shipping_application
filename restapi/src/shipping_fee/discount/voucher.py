@@ -22,4 +22,5 @@ class Voucher:
 		except:
 			return 0
 
-
+	def get_code(self) -> str:
+		return self.code

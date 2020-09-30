@@ -9,6 +9,9 @@ class ShippingFee:
 		self.parcel = Parcel(weight, height, width, length)
 		self.voucher = Voucher(voucher)
 
+	def get_code(self):
+		return self.voucher.get_code()
+
 	def _get_discounted_price(self, cost: float, percent_discount: float) -> float:
 		return cost * (100-percent_discount) / 100
 

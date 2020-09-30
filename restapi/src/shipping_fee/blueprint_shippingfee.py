@@ -20,4 +20,4 @@ def compute_shipping_fee():
 	code = request.args.get('code')
 
 	shipping = ShippingFee(code, weight, height, width, length)
-	return ShippingFeeResponse(shipping.get_fee()).get()
+	return ShippingFeeResponse(shipping).get()
