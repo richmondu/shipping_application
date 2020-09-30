@@ -20,12 +20,12 @@ def compute_shipping_fee():
 	print(code)
 
 	shipping = ShippingFee(code, weight, height, width, length)
-	discounted_price, discount, original_price = shipping.get_fee()
+	discounted_price, percent_discount, original_price = shipping.get_fee()
 	if discounted_price == "N/A":
 		return jsonify(price=discounted_price)
 	if code is None:
 		return jsonify(price=discounted_price, currency="PHP")
-	return jsonify(price=discounted_price, discount=discount, original_price=original_price, currency="PHP")
+	return jsonify(price=discounted_price, discount=percent_discount, original_price=original_price, currency="PHP")
 
 
 
