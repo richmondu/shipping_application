@@ -13,6 +13,7 @@ To cover up for using Python instead of Java, I've added the following features:
 - <b>Swagger</b> for documentation and system testing
 - <b>Jenkins</b> CI/CD for automated build and deployment
 - <b>Docker and Docker-Compose</b> for containerization
+- <b>Curl</b> for automated system testing
 
 Hopefully, there are some business lines which uses Python instead of Java for specific microservices/containers such as Data Analytics related services.
 
