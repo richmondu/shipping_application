@@ -25,15 +25,15 @@ Implement API to compute a parcel cost given its weight and volume based on spec
 
 ### Business logic
 
-Parcel class
+1. Parcel class
 
 - This computes the shipping cost given the item's weight and volume.
 
-Voucher class
+2. Voucher class
 
 - This retrieves the percentage discount from a 3rd party API given a voucher code.
 
-ShippingFee class
+3. ShippingFee class
 
 - This integrates both Parcel and Voucher classes to compute the discounted price.
 
