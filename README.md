@@ -72,7 +72,7 @@ ShippingFee class
 
 ### How to test using Curl:
 
-1. curl -X GET "%GET_API%?code=random&weight=51&height=1&width=1&length=1" -H "accept: application/json"
+1. curl -X GET "https://richmondu.com/api/v1/shipping/fee?code=random&weight=51&height=1&width=1&length=1" -H "accept: application/json"
 
 2. Refer to shipping_application/_curltest for batch scripts for automated system testing
 
