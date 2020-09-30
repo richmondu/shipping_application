@@ -45,7 +45,7 @@ Implement API to compute a parcel cost given its weight and volume based on spec
 
 2. Nginx container
 
-	- Nginx was used instead of AWS ELB to easily convert local environment to cloud without any modifications
+	- Nginx was used instead of AWS ELB for identical setup in local environment to cloud environment
 
 
 # Unit testing
