@@ -43,6 +43,8 @@ ShippingFee class
 	- unittest_voucher.py - test Voucher module
 	- unittest_shipping_fee.py - test Shipping Fee module (uses Parcel and Voucher modules)
 
+<img src="./_images/UnitTest.png" width="1000"/>
+
 
 # System testing
 
