@@ -17,7 +17,6 @@ def compute_shipping_fee():
 	width = float(request.args.get('width'))
 	length = float(request.args.get('length'))
 	code = request.args.get('code')
-	print(code)
 
 	shipping = ShippingFee(code, weight, height, width, length)
 	discounted_price, percent_discount, original_price = shipping.get_fee()
