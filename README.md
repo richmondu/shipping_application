@@ -28,7 +28,7 @@ Parcel class
 
 Voucher class
 
-- This retrieves the percentage discount given a voucher code.
+- This retrieves the percentage discount from a 3rd party API given a voucher code.
 
 ShippingFee class
 
