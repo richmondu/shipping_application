@@ -102,3 +102,9 @@ Implement API to compute a parcel cost given its weight and volume based on spec
 	- test_curl_live_MYNT.bat
 	- test_curl_live_GFI.bat
 	- test_curl_live_skdlks
+
+# CI/CD
+
+CI/CD was done using Jenkins which retrieves code from my private Github repository and deploy to AWS EC2 instance
+
+<img src="./_images/JenkinsUI.png" width="1000"/>
