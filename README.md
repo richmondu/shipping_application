@@ -105,6 +105,6 @@ Implement API to compute a parcel cost given its weight and volume based on spec
 
 # CI/CD
 
-CI/CD was done using Jenkins which retrieves code from my private Github repository and deploy to AWS EC2 instance
+Continuous Integration and Deployment was done using Jenkins which retrieves code from my private Github repository and deploy to AWS EC2 instance
 
 <img src="./_images/JenkinsUI.png" width="1000"/>
