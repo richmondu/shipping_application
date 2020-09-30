@@ -37,6 +37,16 @@ Implement API to compute a parcel cost given its weight and volume based on spec
 
 	- This integrates both Parcel and Voucher classes to compute the discounted price.
 
+### Microservices and containerization
+
+1. REST API container
+
+	- This contains the API which calls the main application business logic - ShippingFee class
+
+2. Nginx container
+
+	- Nginx was used instead of AWS ELB to easily convert local environment to cloud without any modifications
+
 
 # Unit testing
 
