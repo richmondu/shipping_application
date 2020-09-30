@@ -16,6 +16,9 @@ To cover up for using Python instead of Java, I've added the following features:
 
 Hopefully, there are some business lines which uses Python instead of Java for specific microservices/containers such as Data Analytics related services.
 
+# Requirement
+
+Implement API to compute a parcel cost given its weight and volume based on specific rules and conditions, including discount code from a 3rd party API.
 
 # Design
 
