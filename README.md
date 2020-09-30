@@ -67,6 +67,8 @@ ShippingFee class
 	- Optional: Choose code (voucher code) for discount
 	- Click "Execute" button
 
+<img src="./_images/SwaggerUI.png" width="1000"/>
+
 
 ### How to test using Curl:
 
