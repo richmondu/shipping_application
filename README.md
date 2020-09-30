@@ -2,7 +2,7 @@
 
 Notes: 
 
-- <b>Python</b> was used in this exercise instead of <b>Java</> due to preference
+- <b>Python</b> was used in this exercise instead of <b>Java</b> due to preference
 - But I still designed code to be <b>clean and maintanable</b> by utilizing OOP 
 - And more importantly testing the code with <b>unit tests and system tests</b> as well as providing <b>Swagger documentation</b>
 
