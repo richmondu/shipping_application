@@ -9,7 +9,7 @@ Notes:
 
 To cover up for using Python instead of Java, I've added the following features:
 
-- AWS cloud for live deployment via https://richmondu.com
+- AWS cloud for live deployment
 - Swagger for documentation and system testing
 - Jenkins CI/CD for automated build and deployment
 - Docker and Docker-Compose for containerization
