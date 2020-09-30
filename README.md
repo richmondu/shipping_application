@@ -4,15 +4,15 @@ Notes:
 
 - <b>Python</b> was used in this exercise instead of <b>Java</b> due to preference
 - But I still designed code to be <b>clean and maintanable</b> by utilizing OOP 
-- And more importantly testing the code with <b>unit tests and system tests</b> as well as providing <b>Swagger documentation</b>
+- And more importantly testing the code with <b>unit tests and system tests</b> as well as providing <b>API documentation</b>
 
 
 To cover up for using Python instead of Java, I've added the following features:
 
-- AWS cloud for live deployment
-- Swagger for documentation and system testing
-- Jenkins CI/CD for automated build and deployment
-- Docker and Docker-Compose for containerization
+- <b>AWS cloud</b> for live deployment
+- <b>Swagger</b> for documentation and system testing
+- <b>Jenkins</b> CI/CD for automated build and deployment
+- <b>Docker and Docker-Compose</b> for containerization
 
 Hopefully, there are some business lines which uses Python instead of Java for specific microservices/containers such as Data Analytics related services.
 
