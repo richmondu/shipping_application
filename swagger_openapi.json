@@ -72,7 +72,32 @@
         ],
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "price": {
+                      "type": "string",
+                      "description": "The discounted price."
+                    },
+                    "currency": {
+                      "type": "string",
+                      "description": "The currency."
+                    },
+                    "discount": {
+                      "type": "string",
+                      "description": "The percentage discount applied for the given voucher code."
+                    },
+                    "original_price": {
+                      "type": "string",
+                      "description": "The original prioce before discount."
+                    }
+                  }
+                }
+              }
+            }
           },
           "400": {
             "description": "Invalid status value"
