@@ -62,8 +62,10 @@ ShippingFee class
 
 5. Test the API
 
+	- Click "Try it out" button
 	- Input weight, height, width and length
-	- Choose code (voucher code) for discount
+	- Optional: Choose code (voucher code) for discount
+	- Click "Execute" button
 
 
 ### How to test using Curl:
