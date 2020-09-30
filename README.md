@@ -47,6 +47,8 @@ Implement API to compute a parcel cost given its weight and volume based on spec
 
 	- Nginx was used instead of AWS ELB for identical setup in local environment to cloud environment
 
+<img src="./_images/DockerContainers.png" width="1000"/>
+
 
 # Unit testing
 
