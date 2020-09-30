@@ -14,7 +14,7 @@ To cover up for using Python instead of Java, I've added the following features:
 - Jenkins CI/CD for automated build and deployment
 - Docker and Docker-Compose for containerization
 
-Hopefully, there are some business lines which uses Python instead of Java for specific microservices such as Data Analytics related services.
+Hopefully, there are some business lines which uses Python instead of Java for specific microservices/containers such as Data Analytics related services.
 
 
 # Design
