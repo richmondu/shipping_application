@@ -27,7 +27,7 @@ This retrieves the percentage discount given a voucher code.
 
 ### Shipping Fee class
 
-This integrates both Parcel and Voucher classes to compute the discounted price
+This integrates both Parcel and Voucher classes to compute the discounted price.
 
 
 # Unit testing
