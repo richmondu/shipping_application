@@ -17,17 +17,17 @@ To cover up for using Python instead of Java, I've added the following features:
 
 # Design
 
-### Parcel class
+Parcel class
 
-This computes the shipping cost given the item's weight and volume.
+- This computes the shipping cost given the item's weight and volume.
 
-### Voucher class
+Voucher class
 
-This retrieves the percentage discount given a voucher code.
+- This retrieves the percentage discount given a voucher code.
 
-### Shipping Fee class
+ShippingFee class
 
-This integrates both Parcel and Voucher classes to compute the discounted price.
+- This integrates both Parcel and Voucher classes to compute the discounted price.
 
 
 # Unit testing
