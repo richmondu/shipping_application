@@ -20,7 +20,10 @@ Hopefully, there are some business lines which uses Python instead of Java for s
 
 Implement API to compute a parcel cost given its weight and volume based on specific rules and conditions, including discount code from a 3rd party API.
 
+
 # Design
+
+### Business logic
 
 Parcel class
 
