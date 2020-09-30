@@ -1,7 +1,23 @@
 # Shipping Fee Application
 
-Note: 
-Python was used in this exercise instead of Java
+Notes: 
+
+- Python was used in this exercise instead of Java due to preference
+- But I still designed code to be clean and maintanable by utilizing OOP 
+- And more importantly testing the code with unit tests and system tests
+
+
+To cover up for using Python instead of Java, I've added the following features:
+
+- AWS cloud for live deployment via https://richmondu.com
+- Swagger for documentation and system testing
+- Jenkins CI/CD for automated build and deployment
+- Docker and Docker-Compose for containerization
+
+
+# Design
+
+
 
 
 # Unit testing
@@ -32,12 +48,14 @@ Python was used in this exercise instead of Java
 5. Test the API
 
 	- Input weight, height, width and length
-	- Choose code (voucher code for discount)
+	- Choose code (voucher code) for discount
 
 
 ### How to test using Curl:
 
-1. Refer to shipping_application/_curltest for sample batch scripts
+1. curl -X GET "%GET_API%?code=random&weight=51&height=1&width=1&length=1" -H "accept: application/json"
+
+2. Refer to shipping_application/_curltest for batch scripts for automated system testing
 
 	- test_curl_live.bat
 	- test_curl_live_MYNT.bat
