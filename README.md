@@ -79,6 +79,9 @@ ShippingFee class
 2. Refer to shipping_application/_curltest for batch scripts for automated system testing
 
 	- test_curl_live.bat
+	
+		<img src="./_images/SystemTest1.png" width="1000"/>
+	
 	- test_curl_live_MYNT.bat
 	- test_curl_live_GFI.bat
 	- test_curl_live_skdlks
