@@ -9,9 +9,9 @@ class IParcel(ABC):
 		self.width  = width  # cm
 		self.length = length # cm
 
-	def get_volume(self):
+	def get_volume(self) -> float:
 		return self.height * self.width * self.length # cm3
 
 	@abstractmethod
-	def get_cost(self):
+	def get_cost(self) -> str:
 		raise NotImplementedError

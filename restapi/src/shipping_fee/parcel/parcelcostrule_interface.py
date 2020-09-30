@@ -1,4 +1,4 @@
-from abc import abstractmethod, ABC
+from abc import abstractmethod
 from shipping_fee.parcel.parcel_interface import IParcel
 
 
@@ -9,5 +9,5 @@ class IParcelCostRule(IParcel):
 		raise NotImplementedError
 
 	@abstractmethod
-	def check_condition(self):
+	def check_condition(self) -> bool:
 		raise NotImplementedError

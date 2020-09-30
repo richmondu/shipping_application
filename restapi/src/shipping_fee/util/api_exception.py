@@ -1,5 +1,4 @@
-import time
-from flask import Flask, request, abort
+from flask import abort
 
 
 class ApiException:
@@ -10,9 +9,7 @@ class ApiException:
 		def wrapper(*args, **kwargs):
 
 			try:
-				#print(">>> API Exception")
 				val = func(*args, **kwargs)
-				#print("<<< API Exception")
 				return val
 			except:
 				return abort(400)

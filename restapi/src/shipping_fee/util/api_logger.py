@@ -1,5 +1,5 @@
 import time
-from flask import Flask, request
+from flask import request
 
 
 ENABLE_DEBUG = True
@@ -24,6 +24,11 @@ class ApiLogger:
 				try:
 					headers = dict(request.headers) 
 					print("headers: [{}]".format(headers))
+				except:
+					pass
+				try:
+					data = dict(request.args)
+					print("query:    [{}]".format(data))
 				except:
 					pass
 				try:
