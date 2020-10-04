@@ -70,17 +70,16 @@ Implement API to compute a parcel cost given its weight and volume based on spec
 
 1. Go to https://app.swaggerhub.com/apis-docs/richmondu/shipping-fee_application/1.0.0
 
-2. Or Go to https://petstore.swagger.io/
-
+	Or Go to https://petstore.swagger.io/
 	In the textbox above, type https://myntshippingfeeapplication.s3.amazonaws.com/swagger_openapi.json
 	Click Explore button.
 
-3. Choose Server
+2. Choose Server
 
 	- local testing - http://127.0.0.1:8000
 	- live testing - https://richmondu.com
 
-4. Test the API
+3. Test the API
 
 	- Click "Try it out" button
 	- Input weight, height, width and length
